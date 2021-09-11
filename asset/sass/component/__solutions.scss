@@ -1,0 +1,43 @@
+#solutions{
+    padding: 100px 0px 0px 0px;
+    background-image: linear-gradient(60deg, #fcf5f6 0%, #f8fbfe 100%);
+    position: relative;
+    z-index: 1;
+    &::after{
+        position: absolute;
+        height: 150px;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background: #fff;
+        content: "";
+        z-index: -1;
+    }
+}
+
+.solutions_content{
+    position: relative;
+    h3{
+        font-weight: 600;
+        font-size: 50px;
+        color: $titleColor;
+    }
+    h5{
+        font-weight: 500;
+        font-size: 17px;
+        color: $bodyColor;
+        margin-top: 10px;
+    }
+    a{
+        margin-top: 30px;
+    }
+    .solutions_main_image{
+        position: relative;
+        margin-top: 30px;
+    }
+}
+
+.solution_shape_1{
+    position: absolute;
+}

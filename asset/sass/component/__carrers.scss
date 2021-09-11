@@ -1,0 +1,39 @@
+#carrers_area{
+    padding: 100px 0px;
+    background: #fff;
+}
+
+.carres_top_title{
+    h3{
+        font-weight: 600;
+        font-size: 40px;
+        color: $titleColor;
+    }
+    p{
+        font-weight: 500;
+        font-size: 17px;
+        color: $bodyColor;
+        margin-top: 10px;
+    }
+}
+
+.carrers_main_row{
+    margin-top: 60px;
+}
+
+.flex_carrers_image{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; 
+    .carrers_image_box{
+        img{
+            width: 100%;
+        }
+    }
+    .cover_custom{
+        height: 214px;
+        object-fit: cover;
+        border-radius: 9px;
+    }
+}

@@ -1,0 +1,19 @@
+#quote_area{
+    background-color: $mainColor;
+    padding: 100px 0px;
+}
+
+.quote_box_content{
+     h3{
+        color: #fff;
+        font-weight: 600;
+        font-size: 35px;
+        line-height: 45px;
+    }
+    p{
+        font-weight: 500;
+        font-size: 14px;
+        color: #fff;
+        margin-top: 20px;
+    }
+}

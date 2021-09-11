@@ -1,0 +1,51 @@
+#header_top{
+    padding: 10px 0px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+#header_top.fixed{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    z-index: 9999999999999;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+}
+
+
+.logo_area{
+    a{
+        img{
+            height: 70px;
+        }
+    }
+}
+
+.menu_area_header{
+    nav{
+        ul{
+            li{
+                display: inline-block;
+                margin: 0px 15px;
+                a{
+                    font-weight: 500;
+                    font-size: 15px;
+                    color: $titleColor;
+                    &:hover{
+                        color: $mainColor;
+                    }
+                }
+            }
+            .active{
+                a{
+                    color: $mainColor;
+                }
+            }
+        }
+    }
+}

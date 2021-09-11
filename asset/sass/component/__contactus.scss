@@ -1,0 +1,177 @@
+#contact_us{
+    padding: 100px 0px;
+    background: #fff;
+    position: relative;
+}
+
+.contact_top_title{
+    h3{
+        font-weight: 600;
+        font-size: 35px;
+        color: $titleColor;
+    }
+    p{
+        font-weight: 500;
+        font-size: 15px;
+        color: $bodyColor;
+        margin-top: 10px;
+    }
+}
+
+.contact_form_main_wrapper{
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+    min-height: 40px;
+    margin-top: 60px;
+    border-radius: 35px;
+    position: relative;
+    z-index: 1;
+}
+
+.contact_shape_1{
+    position: absolute;
+    left: -50px;
+    bottom: -30px;
+    z-index: -1;
+}
+
+
+
+.contact_form_left_box{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 30px 30px;
+    border-radius: 35px 0px 0px 35px;
+    .top_title{
+        h3{
+            color: #fff;
+            font-size: 20px;
+            font-weight: 600;
+        }
+        p{
+            color: rgba(255, 255, 255, 0.527);
+            font-size: 13px;
+            margin-top: 8px;
+        }
+    }
+    .map_blink_box{
+        min-height: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        .maplocation_text{
+            background: #FF3D8B;
+            color: #fff;
+            width: 321px;
+            padding: 10px 20px;
+            border-radius: 30px;
+            position: relative;
+            cursor: pointer;
+            .angle_sort{
+                position: absolute;
+                bottom: -20px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            h5{
+                font-weight: 500;
+                font-size: 13px;
+                text-align: center;
+                line-height: 21px;
+            }
+        }
+        .dot_shadow_blink{
+            height: 15px;
+            width: 15px;
+            background: #FF4E75;
+            margin-top: 30px;
+            border-radius: 50%;
+        }
+    }
+    .contact_link{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .contact_link_item{
+            .icon{
+                height: 35px;
+                width: 35px;
+                background: rgba(255, 255, 255, 0.466);
+                text-align: center;
+                line-height: 35px;
+                border-radius: 5px;
+                color: #fff;
+            }
+            a{
+                font-weight: 500;
+                font-size: 13px;
+                color: rgba(255, 255, 255, 0.747);
+                display: inline-block;
+                margin-top: 6px;
+                &:hover{
+                    color: #fff;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+.contact_form_form_area{
+    padding-right: 30px;
+    width: 90%;
+    margin: 0 auto;
+    background-color: #fff;
+    .input_box{
+        margin-bottom: 20px;
+        &:last-child{
+            margin-bottom: 0px;
+        }
+        input,textarea{
+            width: 100%;
+            border: none;
+            outline: none;
+            border: 1px solid #ddd;
+            border-radius: 0px;
+            padding: 0px 20px;
+            height: 45px;
+            font-weight: 500;
+            font-size: 14px;
+            border-radius: 4px;
+            &:focus{
+                box-shadow: none;
+            }
+        }
+        label{
+            padding: 15px 10px;
+            display: flex;
+            align-items: center;
+            font-weight: 500;
+            font-size: 14px;
+            height: 30px;
+            color: rgba(51, 51, 51, 0.87);
+            margin-left: 10px;
+            margin-top: 6px;
+        }
+        textarea{
+            height: 150px;
+            resize: none;
+        }
+    }
+    .form-floating>.form-control:focus~label, .form-floating>.form-control:not(:placeholder-shown)~label, .form-floating>.form-select~label{
+        background: #fff;
+        transform: scale(.85) translateY(-20px) translateX(0px);
+        opacity: 1;
+    }
+
+    .submit_action{
+        button{
+            border: none;
+            padding: 0px 70px;
+            height: 47px;
+            line-height: 47px;
+        }
+    }
+}

@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import 'import/reset.scss';
+@import 'import/_color.scss';
+
+@import './component/_button';
+// inport header scss 
+@import './component/_header';
+// hero banner area 
+@import './component/_hero-banar';
+
+// about us section 
+@import './component/_aboutus';
+
+// solutions section 
+@import './component/_solutions';
+
+// feater box 
+@import './component/_featerbox';
+
+
+// current opening 
+@import './component/_current_opening';
+
+// carrers area 
+@import './component/_carrers';
+
+
+
+// quote area 
+@import './component/_quote';
+
+// contact area 
+@import './component/_contactus';
+
+// footer area 
+@import './component/_footer';
+
+
+
+
+
+
+
+
+
+
+@import './component/_scrolltop';

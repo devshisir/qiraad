@@ -1,0 +1,92 @@
+button{
+    transition: 0.4s;
+}
+
+.btn_bg{
+    background-color: $mainColor;
+    color: #fff;
+    display: inline-block;
+    padding: 0 25px;
+    font-weight: 500;
+    font-size: 15px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+    &::after{
+        background-color: #fff;
+        content: "";
+        height: 150px;
+        left: -75px;
+        position: absolute;
+        top: -35px;
+        transform: rotate(35deg);
+        transition: all 1600ms cubic-bezier(0.19, 1, 0.22, 1);
+        width: 40px;
+        opacity: 0;
+    }
+    &:hover{
+        background-color: $hover;
+        color: #fff;
+        &::after{
+            left: 120%;
+            transition: all 1300ms cubic-bezier(0.19, 1, 0.22, 1);
+            opacity: 0.25;
+        }
+    }
+}
+
+.btn_bg_small{
+    background-color: $mainColor;
+    color: #fff;
+    font-weight: 500;
+    font-size: 13px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+    display: block;
+    width: 140px;
+    text-align: center;
+    float: right;
+    &::after{
+        background-color: #fff;
+        content: "";
+        height: 150px;
+        left: -75px;
+        position: absolute;
+        top: -35px;
+        transform: rotate(35deg);
+        transition: all 1600ms cubic-bezier(0.19, 1, 0.22, 1);
+        width: 40px;
+        opacity: 0;
+    }
+    &:hover{
+        background-color: $hover;
+        color: #fff;
+        &::after{
+            left: 120%;
+            transition: all 1300ms cubic-bezier(0.19, 1, 0.22, 1);
+            opacity: 0.25;
+        }
+    }
+}
+
+
+.btn_bg_white{
+    background: #fff;
+    color: $titleColor;
+    font-weight: 500;
+    font-size: 15px;
+    padding: 0px 30px;
+    height: 45px;
+    display: inline-block;
+    line-height: 45px;
+    border-radius: 4px;
+    &:hover{
+        background: $hover;
+        color: #fff;
+    }
+}

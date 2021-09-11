@@ -1,0 +1,50 @@
+#about_us{
+    padding: 150px 0px 140px 0px;
+    background: #fff;
+    position: relative;
+}
+
+.about_us_content{
+    p{
+        font-weight: 500;
+        font-size: 15px;
+        color: $mainColor;
+    }
+    h3{
+        margin: 15px 0px;
+        font-weight: 600;
+        font-size: 40px;
+        width: 90%;
+        line-height: 55px;
+        color: $titleColor;
+    }
+    h5{
+        font-weight: 500;
+        font-size: 15px;
+        color: $bodyColor;
+        width: 90%;
+        line-height: 24px;
+    }
+    a{
+        margin-top: 20px;
+    }
+}
+
+.about_us_image{
+    position: relative;
+    .about_shape_1,.about_shape_2{
+        position: absolute;  
+    }
+    .about_main_image{
+        z-index: 1;
+        position: relative;
+    }
+    .about_shape_1{
+        bottom: -50px;
+        left: -50px;
+    }
+    .about_shape_2{
+        top: -50px;
+        right: -50px;
+    }
+}
