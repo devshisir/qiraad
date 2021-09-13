@@ -11,6 +11,17 @@ $(document).ready(function() {
         }
     });
 
+    // this is for mobile header fix on scroll 
+    var mobileHeader = $('#mobile_header');
+    $(window).scroll(function(){
+        if ($(window).scrollTop() >= 130) {
+            mobileHeader.addClass('fixed animated slideInDown');
+        }
+        else {
+            mobileHeader.removeClass('fixed animated slideInDown');
+        }
+    });
+
 
     // scroll spy active 
     $('#scrollspy_nav').onePageNav({
@@ -28,9 +39,49 @@ $(document).ready(function() {
         },
         scrollChange: function($currentListItem) {
             //I get fired when you enter a section and I pass the list item of the section
+            
         }
     });
 
+
+
+    // scroll spy2 active 
+    $('#scrollspy_nav2').onePageNav({
+        currentClass: 'active',
+        changeHash: false,
+        scrollSpeed: 750,
+        scrollThreshold: 0.1,
+        filter: '',
+        easing: 'linear',
+        begin: function() {
+            //I get fired when the animation is starting
+            $('#mobile_sidebar_menu').toggleClass('show');
+        },
+        end: function() {
+            //I get fired when the animation is ending
+        },
+        scrollChange: function($currentListItem) {
+            //I get fired when you enter a section and I pass the list item of the section
+            
+        }
+    });
+
+
+    // mobile sidebar toggle function
+    $('.mobile_sidebar_toggle button').on('click',function(){
+        $('#mobile_sidebar_menu').toggleClass('show');
+    })
+
+    $('.mobile_sidebar_close button').on('click',function(){
+        $('#mobile_sidebar_menu').toggleClass('show');
+    })
+
+    $('.get_start_btn a').on('click',function(){
+        $('#mobile_sidebar_menu').toggleClass('show');
+    })
+
+
+    
 
     // wow js content slide active 
     new WOW().init();
@@ -62,7 +113,29 @@ $(document).ready(function() {
 
 
 
+    // active type animation 
+    var typed = new Typed("#typed", {
+        stringsElement: '#typed-strings',
+        typeSpeed: 70,
+        backSpeed: 50,
+        backDelay: 1000,
+        startDelay: 1000,
+        loop: true,
+        fadeOut: true,
+        cursorChar: '|',
+    });
 
+    // active type animation 
+    var typed = new Typed("#typed2", {
+        stringsElement: '#typed-string2',
+        typeSpeed: 70,
+        backSpeed: 50,
+        backDelay: 1000,
+        startDelay: 1000,
+        loop: true,
+        fadeOut: true,
+        cursorChar: '|',
+    });
 
 
 

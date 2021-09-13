@@ -1,10 +1,11 @@
 #feater_box{
-    padding: 100px 0px 100px 0px;
+    padding: 0px 0px 100px 0px;
     background: #fff;
 }
 
 .feater_box_item{
-    margin-bottom: 80px;
+    min-height: 90vh;
+    display: flex;
     &:last-child{
         margin-bottom: 0px;
     }
@@ -16,10 +17,10 @@
             span{
                 color: #fff;
                 text-shadow:
-                  -1px -1px 0 $hover,
-                  1px -1px 0 $hover,
-                  -1px 1px 0 $hover,
-                  1px 1px 0 $hover; 
+                  -1px -1px 0 $mainColor,
+                  1px -1px 0 $mainColor,
+                  -1px 1px 0 $mainColor,
+                  1px 1px 0 $mainColor; 
             }
         }
         p{
@@ -30,27 +31,20 @@
         }
     }
 
+    .ml_box{
+        padding-left: 30px;
+    }
+
     .feater_box_image{
         position: relative;
-        .product_image_shape1{
-            position: absolute;
-            right: 0;
-            top: -40px;
-            z-index: 2;
-        }
-        .product_image_shape2{
-            position: absolute;
-            left: -40px;
-            bottom: -40px;
-            z-index: 2;
-        }
     }
 
     .main_product_image{
         box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
-        border-radius: 4px;
+        border-radius: 14px;
         z-index: 4;
-        background: #fff;
+        // background: #fff;
         position: relative;
+        width: 100%;
     }
 }

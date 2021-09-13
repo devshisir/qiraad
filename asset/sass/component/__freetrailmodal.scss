@@ -1,0 +1,84 @@
+.freetrailModalContent{
+    .modal-dialog{
+        max-width: 350px;
+    }
+    .modal-header{
+        border: none;
+        padding: 15px 25px 10px 25px;
+        .modal-title{
+            font-weight: 600;
+            font-size: 15px;
+            color: $titleColor;
+        }
+        .modal_close{
+            border: none;
+            outline: none;
+            background: transparent;
+            font-size: 20px;
+            color: #ddd;
+            &:hover{
+                color: $mainColor;
+            }
+        }
+    }
+    .modal-body{
+        padding: 10px 25px;
+        min-height: 250px;
+        .input_box{
+            margin-bottom: 15px;
+            &:last-child{
+                margin-bottom: 0px;
+            }
+            input,textarea{
+                width: 100%;
+                border: none;
+                outline: none;
+                border: 1px solid #ddd;
+                border-radius: 0px;
+                padding: 0px 20px;
+                height: 45px;
+                font-weight: 500;
+                font-size: 14px;
+                border-radius: 4px;
+                &:focus{
+                    box-shadow: none;
+                }
+            }
+            label{
+                padding: 15px 10px;
+                display: flex;
+                align-items: center;
+                font-weight: 500;
+                font-size: 14px;
+                height: 30px;
+                color: rgba(51, 51, 51, 0.87);
+                margin-left: 10px;
+                margin-top: 6px;
+            }
+            textarea{
+                height: 150px;
+                resize: none;
+            }
+        }
+        .form-floating>.form-control:focus~label, .form-floating>.form-control:not(:placeholder-shown)~label, .form-floating>.form-select~label{
+            background: #fff;
+            transform: scale(.85) translateY(-20px) translateX(0px);
+            opacity: 1;
+        }
+    }
+    .modal-footer{
+        border: none;
+        padding: 10px 25px;
+        background: #F8F8F9;
+        .form_close_btn{
+            border: none;
+            background: transparent;
+            margin-right: 20px;
+            font-weight: 600;
+            font-size: 13px;
+        }
+        .form_submit{
+            border: none;
+        }
+    }
+}

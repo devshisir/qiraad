@@ -24,14 +24,14 @@
    <header id="header_top">
       <div class="container">
          <div class="row align-items-center">
-            <div class="col-xxl-3">
+            <div class="col-xxl-3 col-xl-3 col-lg-2 col-md-2">
                <div class="logo_area">
                   <a href="index.html">
                      <img class="img-fluid" src="asset/img/logo.png" alt="">
                   </a>
                </div>
             </div>
-            <div class="col-xxl-6">
+            <div class="col-xxl-6 col-xl-6 col-lg-7 col-md-8">
                <div class="menu_area_header text-center">
                   <nav>
                      <ul id="scrollspy_nav">
@@ -44,9 +44,9 @@
                   </nav>
                </div>
             </div>
-            <div class="col-xxl-3">
+            <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-2">
                <div class="right_header_link text-end">
-                  <a class="btn_bg" href="#">Get started now</a>
+                  <a class="btn_bg" href="#" data-bs-toggle="modal" data-bs-target="#freeTrailModal">Get started now</a>
                </div>
             </div>
          </div>
@@ -54,32 +54,79 @@
    </header>
    <!-- end haeder area  -->
 
+   <!-- start mobile header area  -->
+   <div id="mobile_header">
+      <div class="container">
+         <div class="row align-items-center">
+            <div class="col-6">
+               <div class="mobile_header_logo">
+                  <a href="index.html">
+                     <img class="img-fluid" src="asset/img/logo.png" alt="">
+                  </a>
+               </div>
+            </div>
+            <div class="col-6">
+               <div class="mobile_sidebar_toggle text-end">
+                  <button type="button">
+                     <i class="fal fa-bars"></i>
+                  </button>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- end mobile header area  -->
+
+   <!-- start mobile sidebar menu  -->
+   <div id="mobile_sidebar_menu">
+      <div class="mobile_header_menu">
+         <div class="mobile_sidebar_close">
+            <button type="button">
+               <i class="fal fa-times"></i>
+            </button>
+         </div>
+         <ul id="scrollspy_nav2">
+            <li class="active"><a href="#hero_banner">Home</a></li>
+            <li><a href="#about_us">Abouts Us</a></li>
+            <li><a href="#solutions">Solutions</a></li>
+            <li><a href="#carrers_area">Careers</a></li>
+            <li><a href="#contact_us">Contact Us</a></li>
+         </ul>
+         <div class="get_start_btn">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#freeTrailModal">Get started now</a>
+         </div>
+      </div>
+   </div>
+   <!-- end mobile sidebar menu  -->
+
    <!-- start banar area  -->
    <section id="hero_banner">
       <div class="container">
-         <div class="row align-items-center">
-            <div class="col-xxl-6">
+         <div class="row align-items-center mflex_reverse">
+            <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
                <div class="hero_banner_content">
                   <p class="wow fadeInUp">CREATIVE SAASUP DISPLAY</p>
-                  <h3 class="wow fadeIn" data-wow-delay="0.4s">Complete ecosystem to simplify investing through technology</h3>
-                  <h5 class="wow fadeInUp" data-wow-delay="0.6s">Nancy boy horse play the bbc tinkety tonk old fruit what </h5>
-                  <a href="#" class="btn_bg wow fadeInUp" data-wow-delay="0.8s">Start free trail now</a>
+                  <h3 class="wow fadeIn" data-wow-delay="0.4s">
+                     Ecosystem for <br>
+                     <div id="typed-strings">
+                        <span>seamless investing</span>
+                     </div>
+                     <span id="typed" style="white-space:pre;"></span>
+                  </h3>
+                  <h5 class="wow fadeInUp" data-wow-delay="0.6s">Nancy boy horse play the bbc tinkety tonk old fruit
+                     what </h5>
+                  <!-- <a href="#" class="btn_bg wow fadeInUp" data-wow-delay="0.8s" data-bs-toggle="modal" data-bs-target="#freeTrailModal">Start free trail now</a> -->
                   <ul>
-                     <li class="wow fadeInUp" data-wow-delay="1s"><i class="fal fa-check"></i> No credit card required</li>
+                     <li class="wow fadeInUp" data-wow-delay="1s"><i class="fal fa-check"></i> No credit card required
+                     </li>
                      <li class="wow fadeInUp" data-wow-delay="1.4s"><i class="fal fa-check"></i> 7 days free trial</li>
                   </ul>
                </div>
             </div>
-            <div class="col-xxl-6">
+            <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
                <div class="hero_banner_image text-end wow fadeIn" data-wow-delay="0.7s">
                   <div class="image_box1">
                      <img class="img-fluid" src="asset/img/banner/slide_1_shape.png" alt="">
-                  </div>
-                  <div class="image_box2">
-                     <img class="img-fluid" src="asset/img/banner/slide_4_shape.png" alt="">
-                  </div>
-                  <div class="image_box3">
-                     <img class="img-fluid" src="asset/img/banner/slide_3_shape.png" alt="">
                   </div>
                </div>
             </div>
@@ -91,19 +138,31 @@
    <!-- start about us area  -->
    <section id="about_us">
       <div class="container">
-         <div class="row align-items-center">
-            <div class="col-xxl-6">
+         <div class="row align-items-center mflex_reverse">
+            <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
                <div class="about_us_content">
-                  <p class="wow fadeInDown">Abouts us</p>
-                  <h3 class="wow fadeIn" data-wow-delay="0.4s">We enable efficient investing in capital markets through seamless integrations.</h3>
-                  <h5 class="wow fadeIn" data-wow-delay="0.6s">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident doloremque dolores cupiditate omnis autem ipsam accusamus totam nam natus facilis.</h5>
+                  <p class="wow fadeInUp">Abouts us</p>
+                  <!-- <h3 class="wow fadeIn" data-wow-delay="0.4s">We enable efficient investing in capital markets through seamless integrations.</h3> -->
+                  <h5 class="wow fadeIn" data-wow-delay="0.3s">Qiraad Inc. is a Wyoming, US based corporation that
+                     develops applications for capital markets. We started operations in 2019 with the vision to build
+                     an ecosystem that will unify all investing resources into a single platform that we named “tahlil”,
+                     the Arabic word for analysis. A universal problem for investors has always been the thinking
+                     required for investing decisions. As each investor is unique, we believe that each investor
+                     deserves the flexibility to codify their unique edge and invest on their own terms. With maximum
+                     automation as our aim, we have set out to build Middle East’s premium data & analytics solution:
+                  </h5>
+                  <div class="about_logo text-center wow fadeIn" data-wow-delay="0.6s">
+                     <img class="img-fluid" src="asset/img/about-logo.png" alt="">
+                  </div>
+                  <h5 class="wow fadeIn" data-wow-delay="0.8s">tahlil.finance is an application developed from the
+                     scratch using latest technologies to offer unparalleled investing experience with 300+ trading
+                     indicators, 10,000+ data points per instrument, complete order functionality, elegant & intuitive
+                     trading platform, portfolio & risk analytics, financial journalism and social media analytics.</h5>
                </div>
             </div>
-            <div class="col-xxl-6">
+            <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
                <div class="about_us_image wow fadeIn" data-wow-delay="0.7s">
-                  <img class="img-fluid about_main_image" src="asset/img/about-us.png" alt="">
-                  <img class="about_shape_1" src="asset/img/shape/dot-shape.png" alt="">
-                  <img class="about_shape_2" src="asset/img/shape/dot-shape.png" alt="">
+                  <img class="img-fluid about_main_image" src="asset/img/about-us.svg" alt="">
                </div>
             </div>
          </div>
@@ -117,12 +176,16 @@
          <div class="row">
             <div class="col-12">
                <div class="solutions_content text-center">
-                  <h3 class="wow fadeInUp">Solutions</h3>
-                  <h5 class="wow fadeInUp" data-wow-delay="0.3s">Built from ground up to cater all investor types.</h5>
-                  <a href="#" class="btn_bg wow fadeInUp" data-wow-delay="0.5s">Start a free trail</a>
+                  <h3 class="wow fadeInUp">
+                     <div id="typed-string2">
+                        <span>Built from ground up</span>
+                        <span>for all investor types.</span>
+                     </div>
+                     <span id="typed2" style="white-space:pre;"></span>
+                  </h3>
                   <div class="clearfix"></div>
-                  <img class="solution_shape_1" src="asset/img/shape/dot.png" alt="">
-                  <img class="img-fluid solutions_main_image wow fadeIn" data-wow-delay="0.7s" src="asset/img/solutions.png" alt="">
+                  <img class="img-fluid solutions_main_image wow fadeIn" data-wow-delay="0.7s"
+                     src="asset/img/solutions.png" alt="">
                </div>
             </div>
          </div>
@@ -134,71 +197,69 @@
    <section id="feater_box">
       <div class="container">
          <div class="row">
-            <div class="col-xxl-9 mx-auto">
+            <div class="col-12 mx-auto">
                <div class="feater_box_item">
                   <div class="row align-items-center">
-                     <div class="col-xxl-5">
+                     <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-5">
                         <div class="content_box">
-                           <h3 class="wow fadeInUp"><span>Trading & </span> <br> Platform</h3>
-                           <p class="wow fadeInUp" data-wow-delay="0.4s">Trade with direct market access, smart and conditional orders, live market data and portfolio monitor.
-                           </p>
+                           <h3 class="wow fadeInUp"><span>Trading </span> <br> Platform</h3>
+                           <p class="wow fadeInUp" data-wow-delay="0.4s">Trade with direct market access, smart and
+                              conditional orders, live market chat and portfolio monitor.</p>
                         </div>
                      </div>
-                     <div class="col-xxl-7">
+                     <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-7">
                         <div class="feater_box_image wow fadeIn" data-wow-delay="0.7s">
-                           <img class="product_image_shape1" src="asset/img/shape/dot-shape.png" alt="">
-                           <img class="product_image_shape2" src="asset/img/shape/dot-shape.png" alt="">
                            <img class="img-fluid main_product_image" src="asset/img/trending.png" alt="">
                         </div>
                      </div>
                   </div>
                </div>
                <div class="feater_box_item">
-                  <div class="row align-items-center">
-                     <div class="col-xxl-7">
+                  <div class="row align-items-center mflex_reverse">
+                     <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-7">
                         <div class="feater_box_image wow fadeIn" data-wow-delay="0.4s">
-                           <img class="product_image_shape2" src="asset/img/shape/dot-shape.png" alt="">
                            <img class="img-fluid main_product_image" src="asset/img/news-media.png" alt="">
                         </div>
                      </div>
-                     <div class="col-xxl-5">
-                        <div class="content_box">
-                           <h3 class="wow fadeInUp" data-wow-delay="0.3s"><span>News & </span> <br> Social Media</h3>
-                           <p class="wow fadeInUp" data-wow-delay="0.5s">Live social media and news content from all around the world with sentiment analysis.</p>
+                     <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-5">
+                        <div class="content_box ml_box">
+                           <h3 class="wow fadeInUp" data-wow-delay="0.3s"><span>News & Social </span> <br> Media
+                              Analytics</h3>
+                           <p class="wow fadeInUp" data-wow-delay="0.5s">Live news and social media content from all
+                              around the world.</p>
                         </div>
                      </div>
                   </div>
                </div>
                <div class="feater_box_item">
                   <div class="row align-items-center">
-                     <div class="col-xxl-5">
+                     <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-5">
                         <div class="content_box">
-                           <h3 class="wow fadeInUp" data-wow-delay="0.3s"><span>Technical </span> <br> Analysis</h3>
-                           <p class="wow fadeInUp" data-wow-delay="0.6s">300+ technical indicators and 100+ fundamental indicators to create rule based trading strategies.
+                           <h3 class="wow fadeInUp" data-wow-delay="0.3s"><span>Financial </span> <br> Data</h3>
+                           <p class="wow fadeInUp" data-wow-delay="0.6s">Financial data visualized and organized with
+                              10,000+ data points per instrument.
                            </p>
                         </div>
                      </div>
-                     <div class="col-xxl-7">
+                     <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-7">
                         <div class="feater_box_image wow fadeIn" data-wow-delay="0.5s">
-                           <img class="product_image_shape1" src="asset/img/shape/dot-shape.png" alt="">
-                           <img class="product_image_shape2" src="asset/img/shape/dot-shape.png" alt="">
                            <img class="img-fluid main_product_image" src="asset/img/tecnical.png" alt="">
                         </div>
                      </div>
                   </div>
                </div>
                <div class="feater_box_item">
-                  <div class="row align-items-center">
-                     <div class="col-xxl-7">
+                  <div class="row align-items-center mflex_reverse">
+                     <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-7">
                         <div class="feater_box_image wow fadeIn" data-wow-delay="0.6s">
-                           <img class="product_image_shape2" src="asset/img/shape/dot-shape.png" alt="">
                            <img class="img-fluid main_product_image" src="asset/img/portfolio.png" alt="">
                         </div>
                      </div>
-                     <div class="col-xxl-5">
-                        <div class="content_box">
+                     <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-5">
+                        <div class="content_box ml_box">
                            <h3 class="wow fadeInUp" data-wow-delay="0.4s"><span>Portfolio </span> <br> Analytics</h3>
-                           <p class="wow fadeInUp" data-wow-delay="0.7s">Visualize performance attribution, portfolio simulation, trade history and risk analytics for advanced portfolio and risk insights.</p>
+                           <p class="wow fadeInUp" data-wow-delay="0.7s">Visualize performance attribution, portfolio
+                              simulation, trade history and risk analytics for advanced portfolio and risk insights.</p>
                         </div>
                      </div>
                   </div>
@@ -211,50 +272,61 @@
 
 
    <!-- start current opening  -->
-   <section id="current_opening">
+   <section id="carrers_area">
       <div class="container">
          <div class="row">
-            <div class="col-xxl-10 mx-auto">
+            <div class="col-12">
                <div class="current_opening_heading text-center">
-                  <h3 class="wow fadeIn">Current Openings</h3>
+                  <h3 class="wow fadeIn">Careers</h3>
+                  <p>We are hiring smart people to work on smart products.</p>
                </div>
                <div class="current_opening_tabs_area">
                   <div class="current_opening_tab_btn">
                      <ul class="nav" id="current_opening_tab" role="tablist">
                         <li class="nav-item wow fadeIn" data-wow-delay="0.3s" role="presentation">
-                          <button class="nav-link active" id="tab1-tab" data-bs-toggle="tab" data-bs-target="#tab1" type="button" role="tab" aria-controls="tabcontrol1" aria-selected="true"><i class="ri-code-line"></i> Developers</button>
+                           <button class="nav-link active" id="tab1-tab" data-bs-toggle="tab" data-bs-target="#tab1"
+                              type="button" role="tab" aria-controls="tabcontrol1" aria-selected="true"><i
+                                 class="ri-code-line"></i> Developers</button>
                         </li>
 
                         <li class="nav-item wow fadeIn" data-wow-delay="0.5s" role="presentation">
-                          <button class="nav-link" id="tab2-tab" data-bs-toggle="tab" data-bs-target="#tab2" type="button" role="tab" aria-controls="tabcontrol2" aria-selected="false"><i class="ri-markup-line"></i> Designers</button>
+                           <button class="nav-link" id="tab2-tab" data-bs-toggle="tab" data-bs-target="#tab2"
+                              type="button" role="tab" aria-controls="tabcontrol2" aria-selected="false"><i
+                                 class="ri-markup-line"></i> Designers</button>
                         </li>
 
                         <li class="nav-item wow fadeIn" data-wow-delay="0.7s" role="presentation">
-                          <button class="nav-link" id="tab3-tab" data-bs-toggle="tab" data-bs-target="#tab3" type="button" role="tab" aria-controls="tabcontrol3" aria-selected="false"><i class="ri-medal-2-line"></i> Marketing</button>
+                           <button class="nav-link" id="tab3-tab" data-bs-toggle="tab" data-bs-target="#tab3"
+                              type="button" role="tab" aria-controls="tabcontrol3" aria-selected="false"><i
+                                 class="ri-medal-2-line"></i> Marketing</button>
                         </li>
 
                         <li class="nav-item wow fadeIn" data-wow-delay="0.9s" role="presentation">
-                           <button class="nav-link" id="tab4-tab" data-bs-toggle="tab" data-bs-target="#tab4" type="button" role="tab" aria-controls="tabcontrol4" aria-selected="false"><i class="ri-survey-line"></i> Researcher</button>
+                           <button class="nav-link" id="tab4-tab" data-bs-toggle="tab" data-bs-target="#tab4"
+                              type="button" role="tab" aria-controls="tabcontrol4" aria-selected="false"><i
+                                 class="ri-survey-line"></i> Researcher</button>
                         </li>
 
                         <li class="nav-item wow fadeIn" data-wow-delay="1s" role="presentation">
-                           <button class="nav-link" id="tab4-tab" data-bs-toggle="tab" data-bs-target="#tab5" type="button" role="tab" aria-controls="tabcontrol5" aria-selected="false"><i class="ri-questionnaire-line"></i> Support</button>
+                           <button class="nav-link" id="tab4-tab" data-bs-toggle="tab" data-bs-target="#tab5"
+                              type="button" role="tab" aria-controls="tabcontrol5" aria-selected="false"><i
+                                 class="ri-questionnaire-line"></i> Support</button>
                         </li>
                         <div class="tab_active_slide wow zoomIn"></div>
-                      </ul>
+                     </ul>
                   </div>
                   <div class="current_opening_tab_content">
                      <div class="tab-content" id="myTabContent">
                         <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="tab1-tab">
                            <div class="tab_item_content wow fadeInUp">
                               <div class="row">
-                                 <div class="col-xxl-7">
+                                 <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-7 col-sm-7">
                                     <div class="tab_content_left">
                                        <h4>Sr. Full Stack Developer</h4>
                                        <p>Remote or India, Full Time</p>
                                     </div>
                                  </div>
-                                 <div class="col-xxl-5">
+                                 <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-5 col-sm-5">
                                     <div class="tab_content_right text-end">
                                        <a href="#" class="btn_bg_small">Apply Now</a>
                                     </div>
@@ -262,15 +334,15 @@
                               </div>
                            </div>
 
-                           <div class="tab_item_content wow fadeInUp" data-wow-delay="0.2s">
+                           <div class="tab_item_content wow fadeInUp">
                               <div class="row">
-                                 <div class="col-xxl-7">
+                                 <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-7 col-sm-7">
                                     <div class="tab_content_left">
                                        <h4>Jr. Full Stack Developer</h4>
                                        <p>Remote or India, Full Time</p>
                                     </div>
                                  </div>
-                                 <div class="col-xxl-5">
+                                 <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-5 col-sm-5">
                                     <div class="tab_content_right text-end">
                                        <a href="#" class="btn_bg_small">Apply Now</a>
                                     </div>
@@ -278,15 +350,15 @@
                               </div>
                            </div>
 
-                           <div class="tab_item_content wow fadeInUp" data-wow-delay="0.4s">
+                           <div class="tab_item_content wow fadeInUp">
                               <div class="row">
-                                 <div class="col-xxl-7">
+                                 <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-7 col-sm-7">
                                     <div class="tab_content_left">
                                        <h4>Database Admin</h4>
                                        <p>Remote or India, Full Time</p>
                                     </div>
                                  </div>
-                                 <div class="col-xxl-5">
+                                 <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-5 col-sm-5">
                                     <div class="tab_content_right text-end">
                                        <a href="#" class="btn_bg_small">Apply Now</a>
                                     </div>
@@ -294,15 +366,15 @@
                               </div>
                            </div>
 
-                           <div class="tab_item_content wow fadeInUp" data-wow-delay="0.6s">
+                           <div class="tab_item_content wow fadeInUp">
                               <div class="row">
-                                 <div class="col-xxl-7">
+                                 <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-7 col-sm-7">
                                     <div class="tab_content_left">
                                        <h4>Machine Learning Engineer</h4>
                                        <p>Remote or India, Full Time</p>
                                     </div>
                                  </div>
-                                 <div class="col-xxl-5">
+                                 <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-5 col-sm-5">
                                     <div class="tab_content_right text-end">
                                        <a href="#" class="btn_bg_small">Apply Now</a>
                                     </div>
@@ -315,13 +387,13 @@
                         <div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="tab2-tab">
                            <div class="tab_item_content">
                               <div class="row">
-                                 <div class="col-xxl-7">
+                                 <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-7 col-sm-7">
                                     <div class="tab_content_left">
                                        <h4>Sr. Full Stack Developer</h4>
                                        <p>Remote or India, Full Time</p>
                                     </div>
                                  </div>
-                                 <div class="col-xxl-5">
+                                 <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-5 col-sm-5">
                                     <div class="tab_content_right text-end">
                                        <a href="#" class="btn_bg_small">Apply Now</a>
                                     </div>
@@ -331,13 +403,13 @@
 
                            <div class="tab_item_content">
                               <div class="row">
-                                 <div class="col-xxl-7">
+                                 <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-7 col-sm-7">
                                     <div class="tab_content_left">
                                        <h4>Jr. Full Stack Developer</h4>
                                        <p>Remote or India, Full Time</p>
                                     </div>
                                  </div>
-                                 <div class="col-xxl-5">
+                                 <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-5 col-sm-5">
                                     <div class="tab_content_right text-end">
                                        <a href="#" class="btn_bg_small">Apply Now</a>
                                     </div>
@@ -347,13 +419,13 @@
 
                            <div class="tab_item_content">
                               <div class="row">
-                                 <div class="col-xxl-7">
+                                 <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-7 col-sm-7">
                                     <div class="tab_content_left">
                                        <h4>Database Admin</h4>
                                        <p>Remote or India, Full Time</p>
                                     </div>
                                  </div>
-                                 <div class="col-xxl-5">
+                                 <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-5 col-sm-5">
                                     <div class="tab_content_right text-end">
                                        <a href="#" class="btn_bg_small">Apply Now</a>
                                     </div>
@@ -363,13 +435,13 @@
 
                            <div class="tab_item_content">
                               <div class="row">
-                                 <div class="col-xxl-7">
+                                 <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-7 col-sm-7">
                                     <div class="tab_content_left">
                                        <h4>Machine Learning Engineer</h4>
                                        <p>Remote or India, Full Time</p>
                                     </div>
                                  </div>
-                                 <div class="col-xxl-5">
+                                 <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-5 col-sm-5">
                                     <div class="tab_content_right text-end">
                                        <a href="#" class="btn_bg_small">Apply Now</a>
                                     </div>
@@ -381,13 +453,13 @@
                         <div class="tab-pane fade" id="tab3" role="tabpanel" aria-labelledby="tab3-tab">
                            <div class="tab_item_content">
                               <div class="row">
-                                 <div class="col-xxl-7">
+                                 <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-7 col-sm-7">
                                     <div class="tab_content_left">
                                        <h4>Sr. Full Stack Developer</h4>
                                        <p>Remote or India, Full Time</p>
                                     </div>
                                  </div>
-                                 <div class="col-xxl-5">
+                                 <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-5 col-sm-5">
                                     <div class="tab_content_right text-end">
                                        <a href="#" class="btn_bg_small">Apply Now</a>
                                     </div>
@@ -397,13 +469,13 @@
 
                            <div class="tab_item_content">
                               <div class="row">
-                                 <div class="col-xxl-7">
+                                 <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-7 col-sm-7">
                                     <div class="tab_content_left">
                                        <h4>Jr. Full Stack Developer</h4>
                                        <p>Remote or India, Full Time</p>
                                     </div>
                                  </div>
-                                 <div class="col-xxl-5">
+                                 <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-5 col-sm-5">
                                     <div class="tab_content_right text-end">
                                        <a href="#" class="btn_bg_small">Apply Now</a>
                                     </div>
@@ -413,13 +485,13 @@
 
                            <div class="tab_item_content">
                               <div class="row">
-                                 <div class="col-xxl-7">
+                                 <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-7 col-sm-7">
                                     <div class="tab_content_left">
                                        <h4>Database Admin</h4>
                                        <p>Remote or India, Full Time</p>
                                     </div>
                                  </div>
-                                 <div class="col-xxl-5">
+                                 <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-5 col-sm-5">
                                     <div class="tab_content_right text-end">
                                        <a href="#" class="btn_bg_small">Apply Now</a>
                                     </div>
@@ -429,13 +501,13 @@
 
                            <div class="tab_item_content">
                               <div class="row">
-                                 <div class="col-xxl-7">
+                                 <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-7 col-sm-7">
                                     <div class="tab_content_left">
                                        <h4>Machine Learning Engineer</h4>
                                        <p>Remote or India, Full Time</p>
                                     </div>
                                  </div>
-                                 <div class="col-xxl-5">
+                                 <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-5 col-sm-5">
                                     <div class="tab_content_right text-end">
                                        <a href="#" class="btn_bg_small">Apply Now</a>
                                     </div>
@@ -448,13 +520,13 @@
                         <div class="tab-pane fade" id="tab4" role="tabpanel" aria-labelledby="tab4-tab">
                            <div class="tab_item_content">
                               <div class="row">
-                                 <div class="col-xxl-7">
+                                 <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-7 col-sm-7">
                                     <div class="tab_content_left">
                                        <h4>Sr. Full Stack Developer</h4>
                                        <p>Remote or India, Full Time</p>
                                     </div>
                                  </div>
-                                 <div class="col-xxl-5">
+                                 <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-5 col-sm-5">
                                     <div class="tab_content_right text-end">
                                        <a href="#" class="btn_bg_small">Apply Now</a>
                                     </div>
@@ -464,13 +536,13 @@
 
                            <div class="tab_item_content">
                               <div class="row">
-                                 <div class="col-xxl-7">
+                                 <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-7 col-sm-7">
                                     <div class="tab_content_left">
                                        <h4>Jr. Full Stack Developer</h4>
                                        <p>Remote or India, Full Time</p>
                                     </div>
                                  </div>
-                                 <div class="col-xxl-5">
+                                 <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-5 col-sm-5">
                                     <div class="tab_content_right text-end">
                                        <a href="#" class="btn_bg_small">Apply Now</a>
                                     </div>
@@ -480,13 +552,13 @@
 
                            <div class="tab_item_content">
                               <div class="row">
-                                 <div class="col-xxl-7">
+                                 <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-7 col-sm-7">
                                     <div class="tab_content_left">
                                        <h4>Database Admin</h4>
                                        <p>Remote or India, Full Time</p>
                                     </div>
                                  </div>
-                                 <div class="col-xxl-5">
+                                 <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-5 col-sm-5">
                                     <div class="tab_content_right text-end">
                                        <a href="#" class="btn_bg_small">Apply Now</a>
                                     </div>
@@ -496,13 +568,13 @@
 
                            <div class="tab_item_content">
                               <div class="row">
-                                 <div class="col-xxl-7">
+                                 <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-7 col-sm-7">
                                     <div class="tab_content_left">
                                        <h4>Machine Learning Engineer</h4>
                                        <p>Remote or India, Full Time</p>
                                     </div>
                                  </div>
-                                 <div class="col-xxl-5">
+                                 <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-5 col-sm-5">
                                     <div class="tab_content_right text-end">
                                        <a href="#" class="btn_bg_small">Apply Now</a>
                                     </div>
@@ -515,13 +587,13 @@
                         <div class="tab-pane fade" id="tab5" role="tabpanel" aria-labelledby="tab5-tab">
                            <div class="tab_item_content">
                               <div class="row">
-                                 <div class="col-xxl-7">
+                                 <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-7 col-sm-7">
                                     <div class="tab_content_left">
                                        <h4>Sr. Full Stack Developer</h4>
                                        <p>Remote or India, Full Time</p>
                                     </div>
                                  </div>
-                                 <div class="col-xxl-5">
+                                 <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-5 col-sm-5">
                                     <div class="tab_content_right text-end">
                                        <a href="#" class="btn_bg_small">Apply Now</a>
                                     </div>
@@ -531,13 +603,13 @@
 
                            <div class="tab_item_content">
                               <div class="row">
-                                 <div class="col-xxl-7">
+                                 <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-7 col-sm-7">
                                     <div class="tab_content_left">
                                        <h4>Jr. Full Stack Developer</h4>
                                        <p>Remote or India, Full Time</p>
                                     </div>
                                  </div>
-                                 <div class="col-xxl-5">
+                                 <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-5 col-sm-5">
                                     <div class="tab_content_right text-end">
                                        <a href="#" class="btn_bg_small">Apply Now</a>
                                     </div>
@@ -547,13 +619,13 @@
 
                            <div class="tab_item_content">
                               <div class="row">
-                                 <div class="col-xxl-7">
+                                 <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-7 col-sm-7">
                                     <div class="tab_content_left">
                                        <h4>Database Admin</h4>
                                        <p>Remote or India, Full Time</p>
                                     </div>
                                  </div>
-                                 <div class="col-xxl-5">
+                                 <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-5 col-sm-5">
                                     <div class="tab_content_right text-end">
                                        <a href="#" class="btn_bg_small">Apply Now</a>
                                     </div>
@@ -563,13 +635,13 @@
 
                            <div class="tab_item_content">
                               <div class="row">
-                                 <div class="col-xxl-7">
+                                 <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-7 col-sm-7">
                                     <div class="tab_content_left">
                                        <h4>Machine Learning Engineer</h4>
                                        <p>Remote or India, Full Time</p>
                                     </div>
                                  </div>
-                                 <div class="col-xxl-5">
+                                 <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-5 col-sm-5">
                                     <div class="tab_content_right text-end">
                                        <a href="#" class="btn_bg_small">Apply Now</a>
                                     </div>
@@ -577,7 +649,7 @@
                               </div>
                            </div>
                         </div>
-                      </div>
+                     </div>
                   </div>
                </div>
             </div>
@@ -593,7 +665,7 @@
 
 
    <!-- start carrers area  -->
-   <section id="carrers_area">
+   <!-- <section id="carrers_area">
       <div class="container">
          <div class="row">
             <div class="col-12">
@@ -605,16 +677,16 @@
          </div>
          <div class="carrers_main_row">
             <div class="row">
-               <div class="col-xxl-10 mx-auto">
+               <div class="col-xxl-10 col-xl-11 mx-auto">
                   <div class="row">
-                     <div class="col-xxl-5">
+                     <div class="col-xxl-5 col-xl-5 col-lg-5">
                         <div class="row">
-                           <div class="col-xxl-6">
+                           <div class="col-xxl-6 col-xl-6 col-lg-6">
                               <div class="carrers_image_box wow fadeIn" data-wow-delay="0.3s">
                                  <img class="img-fluid" src="asset/img/careers/1.png" alt="">
                               </div>
                            </div>
-                           <div class="col-xxl-6 flex_carrers_image">
+                           <div class="col-xxl-6 col-xl-6 col-lg-6 flex_carrers_image">
                               <div class="carrers_image_box wow fadeIn" data-wow-delay="0.6s">
                                  <img class="img-fluid" src="asset/img/careers/2.png" alt="">
                               </div>
@@ -625,12 +697,12 @@
                         </div>
                      </div>
 
-                     <div class="col-xxl-5">
+                     <div class="col-xxl-5 col-xl-5 col-lg-5">
                         <div class="carrers_image_box wow fadeIn" data-wow-delay="1.1s">
                            <img class="img-fluid" src="asset/img/careers/4.png" alt="">
                         </div>
                      </div>
-                     <div class="col-xxl-2 flex_carrers_image">
+                     <div class="col-xxl-2 col-xl-2 col-lg-2 flex_carrers_image">
                         <div class="carrers_image_box wow fadeIn" data-wow-delay="1.4s">
                            <img class="img-fluid" src="asset/img/careers/5.png" alt="">
                         </div>
@@ -644,27 +716,27 @@
             </div>
          </div>
       </div>
-   </section>
+   </section> -->
    <!-- end carrers area  -->
 
    <!-- start quote area  -->
-   <section id="quote_area" style="background-image: url('./asset/img/banner/cta-1.png');">
+   <!-- <section id="quote_area" style="background-image: url('./asset/img/banner/cta-1.png');">
       <div class="container">
          <div class="row align-items-center">
-            <div class="col-xxl-6">
+            <div class="col-xxl-6 col-xl-6 col-lg-7">
                <div class="quote_box_content">
                   <h3 class="wow fadeInUp">Get Start with Qiraad and increase your productivity</h3>
                   <p class="wow fadeInUp" data-wow-delay="0.4s">Naff the little rotter have gutted mate James cuppa baking legged.</p>
                </div>
             </div>
-            <div class="col-xxl-6">
+            <div class="col-xxl-6 col-xl-6 col-lg-5">
                <div class="quote_box_btn text-center">
-                  <a class="btn_bg_white wow zoomIn" data-wow-delay="0.6s" href="#">Get start for free</a>
+                  <a class="btn_bg_white wow zoomIn" data-wow-delay="0.6s" href="#" data-bs-toggle="modal" data-bs-target="#freeTrailModal">Get start for free</a>
                </div>
             </div>
          </div>
       </div>
-   </section>
+   </section> -->
    <!-- end quote area  -->
 
 
@@ -673,14 +745,14 @@
    <section id="contact_us">
       <div class="container">
          <div class="row">
-            <div class="col-xxl-9 mx-auto">
+            <div class="col-12 mx-auto">
                <div class="contact_top_title text-center">
                   <h3 class="wow fadeInUp">Contact Us</h3>
                   <p class="wow fadeInUp" data-wow-delay="0.4s">We are working remotely for now</p>
                </div>
                <div class="contact_form_main_wrapper wow fadeIn" data-wow-delay="0.7s">
                   <div class="row align-items-center">
-                     <div class="col-xxl-5">
+                     <div class="col-xxl-5 col-xl-5 col-lg-5">
                         <div class="contact_form_left_box" style="background-image: url('./asset/img/contact.png');">
                            <div class="top_title">
                               <h3>Send us a Message</h3>
@@ -700,7 +772,7 @@
                                  <div class="icon">
                                     <i class="fal fa-envelope"></i>
                                  </div>
-                                 <a href="mailto::naveed@qiraad.com">naveed@qiraad.com</a>
+                                 <a href="mailto::contact@qiraad.com">contact@qiraad.com</a>
                               </div>
                               <div class="contact_link_item">
                                  <div class="icon">
@@ -711,32 +783,53 @@
                            </div>
                         </div>
                      </div>
-                     <div class="col-xxl-7">
+                     <div class="col-xxl-7 col-xl-7 col-lg-7">
                         <div class="contact_form_form_area">
                            <form action="#">
-                              <div class="input_box">
-                                 <div class="form-floating">
-                                    <input type="text" class="form-control" id="nameId" placeholder="Enter your name">
-                                    <label for="nameId">Name</label>
+                              <div class="row">
+                                 <div class="col-xl-6 col-lg-6 col-md-6">
+                                    <div class="input_box">
+                                       <div class="form-floating">
+                                          <input type="text" class="form-control" id="nameId"
+                                             placeholder="Enter your name">
+                                          <label for="nameId">Name</label>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="col-xl-6 col-lg-6 col-md-6">
+                                    <div class="input_box">
+                                       <div class="form-floating">
+                                          <input type="email" class="form-control" id="emailID"
+                                             placeholder="Enter your email">
+                                          <label for="nameId">Email</label>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="col-xl-6 col-lg-6 col-md-6">
+                                    <div class="input_box">
+                                       <div class="form-floating">
+                                          <input type="text" class="form-control" id="companyId"
+                                             placeholder="Enter your company">
+                                          <label for="companyId">Company</label>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="col-xl-6 col-lg-6 col-md-6">
+                                    <div class="input_box">
+                                       <div class="form-floating">
+                                          <input type="text" class="form-control" id="phoneID"
+                                             placeholder="Enter your phone">
+                                          <label for="phoneID">Phone</label>
+                                       </div>
+                                    </div>
                                  </div>
                               </div>
                               <div class="input_box">
                                  <div class="form-floating">
-                                    <input type="email" class="form-control" id="emailID" placeholder="Enter your email">
-                                    <label for="nameId">Email</label>
-                                 </div>
-                              </div>
-                              <div class="input_box">
-                                 <div class="form-floating">
-                                    <input type="text" class="form-control" id="phoneID" placeholder="Enter your phone">
-                                    <label for="phoneID">Phone</label>
-                                 </div>
-                              </div>
-                              <div class="input_box">
-                                 <div class="form-floating">
-                                    <textarea class="form-control" placeholder="Leave a comment here" id="messageID"></textarea>
+                                    <textarea class="form-control" placeholder="Leave a comment here"
+                                       id="messageID"></textarea>
                                     <label for="messageID">Message</label>
-                                  </div>
+                                 </div>
                               </div>
                               <div class="submit_action text-center">
                                  <button class="btn_bg" type="submit">Submit</button>
@@ -745,7 +838,6 @@
                         </div>
                      </div>
                   </div>
-                  <img class="contact_shape_1" src="asset/img/shape/dot-shape.png" alt="">
                </div>
             </div>
          </div>
@@ -757,17 +849,17 @@
    <footer id="footer_area">
       <div class="container">
          <div class="row">
-            <div class="col-xxl-5">
+            <div class="col-xxl-5 col-xl-5 col-lg-4 col-md-5">
                <div class="footer_about">
                   <a href="index.html" class="wow fadeInUp">
                      <img src="asset/img/logo-white.png" alt="">
                   </a>
-                  <p class="wow fadeInUp" data-wow-delay="0.1s">A complete ecosystem to simplify investing through technology.</p>
+                  <p class="wow fadeInUp" data-wow-delay="0.1s">Ecosystem for seamless investing</p>
                </div>
             </div>
-            <div class="col-xxl-7">
+            <div class="col-xxl-7 col-xl-7 col-lg-8 col-md-7 footer_second_row">
                <div class="row">
-                  <div class="col-xxl-4">
+                  <div class="col-xxl-4 col-xl-4 col-lg-4 col-sm-6">
                      <h4 class="footer_link_title wow fadeIn" data-wow-delay="0.4s">About us</h4>
                      <div class="footer_link_box">
                         <ul>
@@ -778,13 +870,13 @@
                         </ul>
                      </div>
                   </div>
-                  <div class="col-xxl-4">
+                  <div class="col-xxl-4 col-xl-4 col-lg-4 col-sm-6">
                      <h4 class="footer_link_title wow fadeIn" data-wow-delay="0.4s">Get In Touch</h4>
                      <div class="get_in_touch_footer">
                         <p class="wow fadeInUp" data-wow-delay="0.5s">30 N Gould Street, Sheridan, Wyoming, USA</p>
                         <ul>
                            <li class="wow fadeInUp" data-wow-delay="0.4s">
-                              <a href="#"><i class="fal fa-envelope"></i></a>
+                              <a href="mailto::contact@qiraad.com "><i class="fal fa-envelope"></i></a>
                            </li>
                            <li class="wow fadeInUp" data-wow-delay="0.5s">
                               <a href="#"><i class="fal fa-phone"></i></a>
@@ -792,7 +884,7 @@
                         </ul>
                      </div>
                   </div>
-                  <div class="col-xxl-4">
+                  <div class="col-xxl-4 col-xl-4 col-lg-4 col-sm-6 footer_social_col">
                      <h4 class="footer_link_title wow fadeIn" data-wow-delay="0.4s">Social</h4>
                      <div class="footer_social">
                         <ul>
@@ -803,7 +895,8 @@
                               <a href="#"><i class="fab fa-twitter"></i></a>
                            </li>
                            <li class="wow zoomIn" data-wow-delay="0.8s">
-                              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                              <a href="https://www.linkedin.com/company/qiraad-inc" target="_blank"><i
+                                    class="fab fa-linkedin-in"></i></a>
                            </li>
                         </ul>
                      </div>
@@ -827,19 +920,65 @@
    <!-- scroll top and scroll indicator  -->
    <div class="progress-wrap">
       <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
-          <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+         <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
       </svg>
    </div>
    <!-- end scroll top and scroll indicator  -->
 
-
-
-   <div class="fake"></div>
+   <!-- start free trail popup modal  -->
+   <!-- Button trigger modal -->
+   <div class="modal fade freetrailModalContent" id="freeTrailModal" tabindex="-1" aria-labelledby="freetrailModalLabel"
+      aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
+      <div class="modal-dialog modal-dialog-centered">
+         <div class="modal-content">
+            <div class="modal-header">
+               <h5 class="modal-title" id="freetrailModalLabel">Start your free trail</h5>
+               <button class="modal_close" type="button" data-bs-dismiss="modal" aria-label="Close">
+                  <i class="fal fa-times"></i>
+               </button>
+            </div>
+            <form action="#">
+               <div class="modal-body">
+                  <div class="input_box">
+                     <div class="form-floating">
+                        <input type="text" class="form-control" id="nameInput" placeholder="Enter your name" autofocus>
+                        <label for="nameInput">Full name</label>
+                     </div>
+                  </div>
+                  <div class="input_box">
+                     <div class="form-floating">
+                        <input type="email" class="form-control" id="emailInput" placeholder="Enter your email">
+                        <label for="emailInput">Email address</label>
+                     </div>
+                  </div>
+                  <div class="input_box">
+                     <div class="form-floating">
+                        <input type="text" class="form-control" id="phoneInput" placeholder="Enter your phone number">
+                        <label for="phoneInput">Phone number</label>
+                     </div>
+                  </div>
+                  <div class="input_box">
+                     <div class="form-floating">
+                        <input type="text" class="form-control" id="companyInput" placeholder="Enter your company name">
+                        <label for="companyInput">Your company</label>
+                     </div>
+                  </div>
+               </div>
+               <div class="modal-footer">
+                  <button type="button" class="form_close_btn" data-bs-dismiss="modal">Cancel</button>
+                  <button type="submit" class="form_submit btn_bg_small">Submit now</button>
+               </div>
+            </form>
+         </div>
+      </div>
+   </div>
+   <!-- end free trail popup modal  -->
    <!-- all javascript load here -->
    <script src="asset/js/vendor/jquery-3.3.1.min.js"></script>
    <script src="asset/js/bootstrap.bundle.min.js"></script>
    <script src="asset/js/scrolltop.js"></script>
    <script src="asset/js/jquery.nav.js"></script>
+   <script src="asset/js/typed.js"></script>
    <script src="asset/js/wow.min.js"></script>
    <script src="asset/js/custom.js"></script>
 </body>

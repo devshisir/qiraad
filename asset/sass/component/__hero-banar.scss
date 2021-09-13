@@ -44,6 +44,9 @@
             }
         }
     }
+    #typed{
+        text-decoration: underline;
+    }
 }
 
 .hero_banner_image{
@@ -51,22 +54,12 @@
     .image_box1{
         img{
             box-shadow: 0px 40px 40px 0px #00052724;
+            background: #fff;
+            border-radius: 10px;
         }
     }
-    .image_box2{
-        position: absolute;
-        bottom: -80px;
-        right: 60px;
-        img{
-            box-shadow: 0px 20px 70px 0px #00052733;
-        }
-    }
-    .image_box3{
-        position: absolute;
-        top: 80px;
-        right: -80px;
-        img{
-            box-shadow: 0px 20px 70px 0px #00052733;
-        }
-    }
+}
+
+span.typed-cursor{
+    font-weight: 400;
 }
